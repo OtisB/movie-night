@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 function DataFetch() {
   const [Movies, setMovies] = useState([]);
+
   const cleanUpData = (unCleanData) => {
     const cleanData = unCleanData.map((field) => {
       const { sys, fields } = field;
@@ -36,8 +37,10 @@ function DataFetch() {
       };
       return updatedField;
     });
+
     setMovies(cleanData);
   };
+
   console.log("ich bin movies useState", Movies);
   useEffect(() => {
     getMovies();
@@ -46,35 +49,43 @@ function DataFetch() {
   const getMovies = async () => {
     try {
       const response = await client.getEntries({ content_type: "movieNight" });
-      const rasponseData = response.items;
-      cleanUpData(rasponseData);
+      const responseData = response.items;
+      cleanUpData(responseData);
     } catch (error) {
       console.log(error);
     }
   };
-  return (
-    <div className="test">
-      {Movies.length &&
-        Movies.map((movie) => {
-          return (
-            <>
-              <div key={crypto.randomUUID()}>
-                <p>{movie.fieldTitle}</p>
-                <img src={movie.fieldImage} alt={movie.fieldTitle} />
-                <p>{movie.fieldDescription}</p>
-                <p>{movie.fieldGenre}</p>
-                <p>{movie.fieldRating}</p>
-                <p>{movie.fieldRuntime}</p>
-                <p>{movie.fieldScreenwriter}</p>
-                <p>{movie.fieldYearOfPuplication}</p>
-                <p>{movie.fieldCast}</p>
-                <p>{movie.fieldRuntime}</p>
-              </div>
-            </>
-          );
-        })}
-    </div>
-  );
+  // return (
+  //   <div className="test">
+  //     {Movies.length &&
+  //       Movies.map((movie) => {
+  //         return (
+  //           <>
+  //             <div key={crypto.randomUUID()}>
+  //               <p>{movie.fieldTitle}</p>
+  //               <img src={movie.fieldImage} alt={movie.fieldTitle} />
+  //               <p>{movie.fieldDescription}</p>
+  //               <p>{movie.fieldGenre}</p>
+  //               <p>{movie.fieldRating}</p>
+  //               <p>{movie.fieldRuntime}</p>
+  //               <p>{movie.fieldScreenwriter}</p>
+  //               <p>{movie.fieldYearOfPuplication}</p>
+  //               <p>{movie.fieldCast}</p>
+  //               <p>{movie.fieldRuntime}</p>
+  //             </div>
+  //           </>
+  //         );
+  //       })}
+  //   </div>
+  // );
+
+  //
+
+  console.log('return movies after fetch');
+  ///////// Code runs twice!!
+  return Movies;
+
+
 }
 
 export default DataFetch;
