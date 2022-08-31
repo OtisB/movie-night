@@ -1,6 +1,12 @@
+
 import "./App.css";
 import { client } from "./client";
 import { useEffect, useState } from "react";
+import Header from './Components/Header';
+
+
+
+
 
 function App() {
   const [Movies, setMovies] = useState([]);
@@ -56,6 +62,7 @@ function App() {
 
   return (
     <div className="App">
+    < Header />
       <h1>Hello world!</h1>
     </div>
   );
