@@ -11,8 +11,12 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route
+          path="error"
+          element={<div>oops, something went wrong.</div>}
+        />
+        <Route path="*" element={<div>not found</div>} />
       </Routes>
-
 
       {/* <DataFetch /> */}
     </div>
