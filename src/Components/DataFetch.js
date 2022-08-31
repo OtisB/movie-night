@@ -1,6 +1,7 @@
 import { client } from "../client";
 import { useEffect, useState } from "react";
 
+//rename to useDataFetch (best practice for custom hooks!)
 function DataFetch() {
   const [Movies, setMovies] = useState([]);
 
