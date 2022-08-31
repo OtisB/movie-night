@@ -1,6 +1,7 @@
 
 import Header from "./Components/Header";
 import DataFetch from "./Components/DataFetch";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <DataFetch />
+      <Footer />
     </div>
   );
 }
