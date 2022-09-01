@@ -1,14 +1,11 @@
-
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import useDataFetch from "./useDataFetch";
-import './Main.css';
 import MovieOfTheDay from "./MovieOfTheDay";
+import "./Main.css";
 
 function Main() {
-
-  const movies = useDataFetch();   //DataFetch is used as custom hook!
-  console.log('main:', movies);
-
+  const movies = useDataFetch(); //DataFetch is used as custom hook!
+  console.log("main");
 
   const checkForMovies = () => {
     return !movies || movies.length === 0 ? false : true;
@@ -19,10 +16,10 @@ function Main() {
       {!checkForMovies() && (
         <div className="no-data-message">There are no Movies yet!</div>
       )}
+      {checkForMovies() && <MovieOfTheDay movies={movies} />}
       {checkForMovies() && <div>Yay, Movies!</div>}
-      {/* {checkForMovies() && <Movie of the Day movies={movies}/>} */}
+
       {/* {checkForMovies() && <SmallCard movies={movies}/>} */}
-      <MovieOfTheDay />
     </div>
   );
 }
