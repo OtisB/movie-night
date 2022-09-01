@@ -1,0 +1,42 @@
+* {
+  /* Placeholder Colors */
+  --primary-color: #fff;
+  --secundary-color: #28a745;
+  --nav-background-color: #333;
+
+  padding-top: 0.2rem;
+}
+
+.MovieOfTheDay {
+  display: flex;
+  background-color: var(--nav-background-color);
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  max-height: 50vh;
+  color: var(--secundary-color);
+}
+.MovieOfTheDayWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  gap: 4rem;
+}
+.MovieOfTheDayImage {
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+
+  object-fit: contain;
+}
+
+.InfoSection {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--primary-color);
+}
