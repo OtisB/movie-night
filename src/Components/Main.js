@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
-import DataFetch from "./DataFetch";
+
+import { Link } from 'react-router-dom';
+import useDataFetch from "./useDataFetch";
+import './Main.css';
 import MovieOfTheDay from "./MovieOfTheDay";
-import "./Main.css";
 
 function Main() {
-  const movies = DataFetch(); //DataFetch is used as custom hook!
-  console.log("main");
+
+  const movies = useDataFetch();   //DataFetch is used as custom hook!
+  console.log('main:', movies);
+
 
   const checkForMovies = () => {
     return !movies || movies.length === 0 ? false : true;
