@@ -2,8 +2,8 @@ import MovieCardSmall from "./MovieCardSmall";
 import "./MovieCards.css";
 
 function MovieCards({ movies }) {
-  console.clear();
-  console.log(movies);
+  // console.clear();
+  // console.log(movies);
 
   let firstMovieIndex = 0;
   let lastMovieIndex = 4;

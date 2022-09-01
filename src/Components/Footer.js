@@ -25,27 +25,27 @@ function Footer() {
           <NavLink to="/help">Help</NavLink>
         </li>
         <li>
-          <a href={"https://m.facebook.com/"}>
+          <a href={"https://m.facebook.com/"} target="_blank" rel="noreferrer noopener">
             <img src={Facebook} alt="www.flaticon.com" width="30" />
           </a>
         </li>
         <li>
-          <a href={"https://twitter.com/"}>
+          <a href={"https://twitter.com/"} target="_blank" rel="noreferrer noopener">
             <img src={Twitter} alt="www.flaticon.com" width="30" />
           </a>
         </li>
         <li>
-          <a href={"https://www.linkedin.com/"}>
+          <a href={"https://www.linkedin.com/"} target="_blank" rel="noreferrer noopener">
             <img src={LinkedIn} alt="www.flaticon.com" width="30" />
           </a>
         </li>
         <li>
-          <a href={"https://www.instagram.com/"}>
+          <a href={"https://www.instagram.com/"} target="_blank" rel="noreferrer noopener">
             <img src={Instagram} alt="www.flaticon.com" width="30" />
           </a>
         </li>
         <li>
-          <a href={"https://www.youtube.com/"}>
+          <a href={"https://www.youtube.com/"} target="_blank" rel="noreferrer noopener">
             <img src={YouTube} alt="www.flaticon.com" width="30" />
           </a>
         </li>
