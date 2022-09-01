@@ -2,7 +2,7 @@ import { client } from "../client";
 import { useEffect, useState } from "react";
 
 function useDataFetch() {
-  const [Movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     getMovies();
@@ -17,12 +17,14 @@ function useDataFetch() {
       console.log(error);
     }
   };
-  console.log(Movies);
+  console.log(movies);
+
+  return movies;
 
   // return (
   //   <div className="test">
-  //     {Movies.length &&
-  //       Movies.map((movie) => {
+  //     {movies.length &&
+  //       movies.map((movie) => {
   //         return (
   //           <>
   //             <div key={crypto.randomUUID()}>
