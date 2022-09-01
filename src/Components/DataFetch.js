@@ -50,12 +50,15 @@ function DataFetch() {
   const getMovies = async () => {
     try {
       const response = await client.getEntries({ content_type: "movieNight" });
+
       const responseData = response.items;
       cleanUpData(responseData);
+
     } catch (error) {
       console.log(error);
     }
   };
+
   // return (
   //   <div className="test">
   //     {Movies.length &&
@@ -85,6 +88,7 @@ function DataFetch() {
   console.log('return movies after fetch');
   ///////// Code runs twice!!
   return Movies;
+
 
 
 }
