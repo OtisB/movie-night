@@ -1,6 +1,5 @@
 import "./Footer.css";
 ///////////use Link instead of NavLink
-import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Facebook from "../img/facebook.png";
 import Twitter from "../img/twitter.png";
@@ -13,17 +12,19 @@ function Footer() {
     <nav className="footer-navbar">
       <ul className="nav-link-container">
         <li>
-          <NavLink to="/inprint">Imprint</NavLink>
+          <Link to="/inprint">Imprint</Link>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <NavLink to="/aboutus">About us</NavLink>
+          <Link to="/aboutus">About us</Link>
         </li>
         <li>
-          <NavLink to="/help">Help</NavLink>
+          <Link to="/help">Help</Link>
         </li>
+        </ul>
+        <ul className="nav-social-container">
         <li>
           <a href={"https://m.facebook.com/"}>
             <img src={Facebook} alt="www.flaticon.com" width="30" />
