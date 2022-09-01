@@ -1,24 +1,30 @@
-// import DataFetch from "./DataFetch";
+import Main from "./Main";
 
-// export default function MovieOfTheDay() {
-//   const { Movies } = DataFetch();
+export default function MovieOfTheDay() {
+  const { movies } = Main();
 
-//   <div className="test">
-//     {Movies.length &&
-//       Movies.map((movie) => {
-//         return (
-//           <div key={movie.id}>
-//             <p>{movie.fieldTitle}</p>
-//             <img src={movie.fieldImage} alt={movie.fieldTitle} />
-//             <p>{movie.fieldDescription}</p>
-//             <p>{movie.fieldGenre}</p>
-//             <p>{movie.fieldRating}</p>
-//             <p>{movie.fieldRuntime}</p>
-//             <p>{movie.fieldScreenwriter}</p>
-//             <p>{movie.fieldYearOfPuplication}</p>
-//             <p>{movie.fieldCast}</p>
-//           </div>
-//         );
-//       })}
-//   </div>;
-// }
+  <div className="MovieOfTheDay">
+    {movies.length &&
+      movies.map((movie) => {
+        return (
+          <div key={movie.id} className="MovieOfTheDay">
+            <p>{movie.fieldTitle}</p>
+            <img
+              src={movie.fieldImage}
+              alt={movie.fieldTitle}
+              className="MovieOfTheDayImage"
+            />
+            <div className="MovieOfTheDayInfoSection">
+              <p>{movie.fieldDescription}</p>
+              <p>{movie.fieldGenre}</p>
+              <p>{movie.fieldRating}</p>
+              <p>{movie.fieldRuntime}</p>
+              <p>{movie.fieldScreenwriter}</p>
+              <p>{movie.fieldYearOfPuplication}</p>
+              <p>{movie.fieldCast}</p>
+            </div>
+          </div>
+        );
+      })}
+  </div>;
+}
