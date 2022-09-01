@@ -1,26 +1,28 @@
-export default function MovieOfTheDay({ movies }) {
+function MovieOfTheDay({ movies }) {
+  console.log("message" + movies);
   <div className="MovieOfTheDay">
     {movies.length &&
-      movies.map((movie) => {
+      movies.map((movies) => {
         return (
-          <div key={movie.id} className="MovieOfTheDay">
-            <p>{movie.fieldTitle}</p>
+          <div key={movies.id} className="MovieOfTheDay">
+            <p>{movies.fields.title}</p>
             <img
-              src={movie.fieldImage}
-              alt={movie.fieldTitle}
+              src={movies.fields.image}
+              alt={movies.fieldTitle}
               className="MovieOfTheDayImage"
             />
             <div className="MovieOfTheDayInfoSection">
-              <p>{movie.fieldDescription}</p>
-              <p>{movie.fieldGenre}</p>
-              <p>{movie.fieldRating}</p>
-              <p>{movie.fieldRuntime}</p>
-              <p>{movie.fieldScreenwriter}</p>
-              <p>{movie.fieldYearOfPuplication}</p>
-              <p>{movie.fieldCast}</p>
+              <p>{movies.fieldDescription}</p>
+              <p>{movies.fieldGenre}</p>
+              <p>{movies.fieldRating}</p>
+              <p>{movies.fieldRuntime}</p>
+              <p>{movies.fieldScreenwriter}</p>
+              <p>{movies.fieldYearOfPuplication}</p>
+              <p>{movies.fieldCast}</p>
             </div>
           </div>
         );
       })}
   </div>;
 }
+export default MovieOfTheDay;
