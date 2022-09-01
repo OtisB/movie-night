@@ -1,8 +1,4 @@
-import Main from "./Main";
-
-export default function MovieOfTheDay() {
-  const { movies } = Main();
-
+export default function MovieOfTheDay({ movies }) {
   <div className="MovieOfTheDay">
     {movies.length &&
       movies.map((movie) => {
