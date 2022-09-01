@@ -1,29 +1,25 @@
+import "./MovieOfTheDay.css";
+
 function MovieOfTheDay({ movies }) {
   let randomMovie = movies[Math.floor(Math.random() * movies.length)];
+
   console.log(randomMovie);
   return (
-    <div className="MovieOfTheDay">
-      {randomMovie.map((movie) => {
-        return (
-          <div key={movie.id} className="MovieOfTheDay">
-            <p>{movie.fieldTitle}</p>
-            <img
-              src={movie.fieldImage}
-              alt={movie.fieldTitle}
-              className="MovieOfTheDayImage"
-            />
-            <div className="MovieOfTheDayInfoSection">
-              <p>{movie.fieldDescription}</p>
-              <p>{movie.fieldGenre}</p>
-              <p>{movie.fieldRating}</p>
-              <p>{movie.fieldRuntime}</p>
-              <p>{movie.fieldScreenwriter}</p>
-              <p>{movie.fieldYearOfPuplication}</p>
-              <p>{movie.fieldCast}</p>
-            </div>
-          </div>
-        );
-      })}
+    <div key={randomMovie.id} className="MovieOfTheDay">
+      <p>{randomMovie.fieldTitle}</p>
+      <div className="MovieOfTheDayWrapper">
+        <img
+          className="MovieOfTheDayImage"
+          src={randomMovie.fieldImage}
+          alt={randomMovie.fieldTitle}
+        />
+        <div className="InfoSection">
+          <p>Runtime: {randomMovie.fieldFsk}</p>
+          <p>Rating: {randomMovie.fieldRating}</p>
+          <p>Runtime: {randomMovie.fieldRuntime}</p>
+          <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
+        </div>
+      </div>
     </div>
   );
 }
