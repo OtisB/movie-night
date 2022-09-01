@@ -1,0 +1,44 @@
+* {
+  --primary-color: #fff;
+  --secundary-color: #28a745;
+  --nav-background-color: #333;
+}
+
+.LoginWrapper {
+  background-color: var(--nav-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.LoginButton {
+  padding: 1rem 9.3rem;
+  background-color: var(--secundary-color);
+  border-style: none;
+}
+
+.LoginButton:hover {
+  cursor: pointer;
+}
+
+.SignUpWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.NotAMember {
+  color: gray;
+}
+
+input {
+  padding: 1rem 6rem;
+  border-style: none;
+}
+
+.SignUpNow {
+  color: var(--secundary-color);
+}
