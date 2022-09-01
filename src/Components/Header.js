@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
-import "./Header.css";
+import { NavLink, Link  } from 'react-router-dom';
+import './Header.css';
+import Logo from '../img/Logo.png';
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
       <nav className="navbar">
         <div className="logo">
           {/* Placeholder Logo, replace with image */}
-          <NavLink to="/">Logo</NavLink>
+          <Link to='/'><img src={Logo} alt="Movie Night" width="50" /></Link>
         </div>
         <ul className="nav-link-container">
           <NavLink to="/action">
