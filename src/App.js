@@ -10,13 +10,13 @@ function App() {
     <div className="App">
       <Header />
       {/* <useDataFetch /> */}
-      <Footer />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="Login" element={<Login />} />
         <Route path="error" element={<div>oops, something went wrong.</div>} />
         <Route path="*" element={<div>not found</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

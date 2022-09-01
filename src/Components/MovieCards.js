@@ -1,18 +1,23 @@
-import "./MovieOfTheDay.css";
+import MovieCardSmall from "./MovieCardSmall";
+import "./MovieCards.css";
 
 function MovieCards({ movies }) {
   console.clear();
+  console.log(movies);
+
+  let firstMovieIndex = 0;
+  let lastMovieIndex = 4;
+  // For Prev and next Buttons
+  const shownRange = lastMovieIndex - firstMovieIndex;
+
+  const shownMovies = movies.slice(firstMovieIndex, lastMovieIndex + 1); // + 1 is cut off
 
   return (
     <div className="cards-container">
-      {movies.map(movie => {
-        //console.log(movie);
+      {shownMovies.map(movie => {
+        console.log(movie);
         return (
-          // replace with MovieCard
-          <div className="movie-card" key={movie.id}>
-            <h3>Test</h3>
-            <h3>{movie.fieldTitle}</h3>
-          </div>
+          <MovieCardSmall {...movie} key={movie.id} />
         )
       })}
     </div>

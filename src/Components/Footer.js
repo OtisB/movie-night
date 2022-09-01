@@ -19,7 +19,7 @@ function Footer() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <NavLink to="/aboutus">About us</NavLink>
+          <NavLink to="/aboutus">About</NavLink>
         </li>
         <li>
           <NavLink to="/help">Help</NavLink>
