@@ -26,14 +26,13 @@
   margin: 0 1rem;
 }
 
-.navbar a:hover {
-  border-bottom: 2px solid var(--secundary-color);
+
+.logo{
+  transform: rotate(15deg);
 }
 
-.logo a {
-  color: var(--secundary-color);
-  border: 2px solid var(--secundary-color);
-  border-radius: 40%;
+.logo:hover{
+  transform: rotate(-5deg);
 }
 
 .nav-link-container {
@@ -41,6 +40,19 @@
   justify-content: center;
 }
 
-a.active {
+.nav-link-container a{
+  border-bottom: 2px solid var(--nav-background-color);
+}
+
+.nav-link-container a:hover {
   border-bottom: 2px solid var(--secundary-color);
 }
+
+.login a{
+  border-bottom: 2px solid var(--nav-background-color);
+}
+
+.login a:hover{
+  border-bottom: 2px solid var(--secundary-color);
+}
+
