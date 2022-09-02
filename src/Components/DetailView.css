@@ -14,10 +14,10 @@
 }
 
 .detail-view-image{
-    width: 40vw;
-    height: calc(40vw / 1.618);
+    width: 60vw;
+    height: calc(60vw / 1.618);
     object-fit: cover;
-    object-position: 80% 40%;
+    object-position: left top;
 }
 
 

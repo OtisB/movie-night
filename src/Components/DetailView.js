@@ -1,7 +1,8 @@
 import './DetailView.css';
+import Rating from './Rating';
 
 function DetailView({randomMovie}){
-
+    console.log(randomMovie.fieldImage);
 
     return(
         <article key={randomMovie.id} className="detail-view-container">
@@ -15,7 +16,7 @@ function DetailView({randomMovie}){
             </figure>
                 <div className="detail-view-info">
                     <p>Runtime: {randomMovie.fieldFsk}</p>
-                    <p>Rating: {randomMovie.fieldRating}</p>
+                    <p>Rating: <Rating rating={randomMovie.fieldRating} /></p>
                     <p>Runtime: {randomMovie.fieldRuntime}</p>
                     <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
                 </div>
