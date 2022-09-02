@@ -1,10 +1,11 @@
 //import { Link } from "react-router-dom";
 import useDataFetch from "./useDataFetch";
 import MovieOfTheDay from "./MovieOfTheDay";
+import MovieCards from "./MovieCards";
 import "./Main.css";
 
 function Main() {
-  const movies = useDataFetch(); //DataFetch is used as custom hook!
+  const movies = useDataFetch();
   console.log("main");
 
   const checkForMovies = () => {
@@ -19,7 +20,7 @@ function Main() {
       {checkForMovies() && <MovieOfTheDay movies={movies} />}
       {checkForMovies() && <div>Yay, Movies!</div>}
 
-      {/* {checkForMovies() && <SmallCard movies={movies}/>} */}
+      {checkForMovies() && <MovieCards movies={movies} />}
     </div>
   );
 }
