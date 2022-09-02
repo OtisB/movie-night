@@ -6,7 +6,7 @@ function MovieOfTheDay({ movies }) {
   console.log(randomMovie);
   return (
     <div key={randomMovie.id} className="MovieOfTheDay">
-      <p>{randomMovie.fieldTitle}</p>
+      <h2>{randomMovie.fieldTitle}</h2>
       <div className="MovieOfTheDayWrapper">
         <img
           className="MovieOfTheDayImage"
