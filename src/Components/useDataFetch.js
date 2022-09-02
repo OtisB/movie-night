@@ -42,6 +42,7 @@ function useDataFetch() {
 
   useEffect(() => {
     getMovies();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getMovies = async () => {
@@ -53,7 +54,6 @@ function useDataFetch() {
       console.log(error);
     }
   };
-  console.log(movies);
 
   return movies;
 
