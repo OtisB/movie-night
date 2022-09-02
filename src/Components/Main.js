@@ -1,4 +1,3 @@
-//import { Link } from "react-router-dom";
 import useDataFetch from "./useDataFetch";
 import MovieOfTheDay from "./MovieOfTheDay";
 import MovieCards from "./MovieCards";
@@ -18,8 +17,6 @@ function Main() {
         <div className="no-data-message">There are no Movies yet!</div>
       )}
       {checkForMovies() && <MovieOfTheDay movies={movies} />}
-      {checkForMovies() && <div>Yay, Movies!</div>}
-
       {checkForMovies() && <MovieCards movies={movies} />}
     </div>
   );

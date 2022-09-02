@@ -2,8 +2,6 @@ import MovieCardSmall from "./MovieCardSmall";
 import "./MovieCards.css";
 
 function MovieCards({ movies }) {
-  //console.clear();
-  // console.log(movies);
 
   let firstMovieIndex = 0;
   let lastMovieIndex = 4;
@@ -15,7 +13,6 @@ function MovieCards({ movies }) {
   return (
     <div className="cards-container">
       {shownMovies.map(shownMovie => {
-        // console.log(shownMovie);
         return (
           <MovieCardSmall {...shownMovie} key={shownMovie.id} />
         )

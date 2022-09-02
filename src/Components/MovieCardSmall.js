@@ -10,7 +10,6 @@ function MovieCardSmall({
   fieldGenre
 }) {
 
-  //split title
   let mainTitle = fieldTitle;
   let additionalTitle;
   if (mainTitle.includes(" - ")) {
@@ -20,7 +19,6 @@ function MovieCardSmall({
   }
 
   return (
-
     <div className="movie-card" key={id}>
       <div className="card-image-container">
         <img
