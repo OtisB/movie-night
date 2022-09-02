@@ -14,10 +14,10 @@ function MovieCards({ movies }) {
 
   return (
     <div className="cards-container">
-      {shownMovies.map(movie => {
-        console.log(movie);
+      {shownMovies.map(shownMovie => {
+        // console.log(shownMovie);
         return (
-          <MovieCardSmall {...movie} key={movie.id} />
+          <MovieCardSmall {...shownMovie} key={shownMovie.id} />
         )
       })}
     </div>

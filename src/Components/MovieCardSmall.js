@@ -2,7 +2,7 @@ import "./MovieCardSmall.css";
 
 function MovieCardSmall({
   id,
-  fildImage,
+  fieldImage,
   fieldTitle,
   fieldFsk,
   fieldRuntime,
@@ -22,11 +22,24 @@ function MovieCardSmall({
   return (
 
     <div className="movie-card" key={id}>
-      <h3>{mainTitle}</h3>
-      <h4>{additionalTitle}</h4>
-      <p>{fieldFsk}</p>
-      <p>{fieldRuntime}</p>
-      <p>{fieldRating}</p>
+      <div className="card-image-container">
+        <img
+          src={fieldImage}
+          alt={fieldTitle}
+        />
+      </div>
+      <div className="card-content">
+        <div className="card-title">
+          <h2>{mainTitle}</h2>
+          <h4>{additionalTitle}</h4>
+        </div>
+        <div className="card-text">
+          <p>FSK: {fieldFsk}</p>
+          <p>Runtime: {fieldRuntime} min</p>
+        </div>
+        <div className="rating-container">
+          {fieldRating}</div>
+      </div>
     </div>
   );
 }
