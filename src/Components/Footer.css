@@ -1,11 +1,3 @@
-* {
-  /* Placeholder Colors */
-  --primary-color: #fff;
-  --secundary-color: #28a745;
-  --nav-background-color: #333;
-}
-
-
 .footer-navbar {
   display: flex;
   justify-content: space-between;
