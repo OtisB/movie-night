@@ -9,9 +9,7 @@ function MovieCards({ movies }) {
 
   const shownRange = lastMovieIndex - firstMovieIndex;
 
-  const handleClickPrev = (event) => {
-    event.preventDefault();
-
+  const handleClickPrev = () => {
     if ((firstMovieIndex - shownRange) < 0) {
       setFirstMovieIndex(0);
       setLastMovieIndex(4);
@@ -21,9 +19,7 @@ function MovieCards({ movies }) {
     }
   };
 
-  const handleClickNext = (event) => {
-    event.preventDefault();
-
+  const handleClickNext = () => {
     if ((lastMovieIndex + shownRange) > movies.length) {
       setFirstMovieIndex(((movies.length - 1)) - shownRange);
       setLastMovieIndex(movies.length - 1);
@@ -38,9 +34,11 @@ function MovieCards({ movies }) {
   }, [firstMovieIndex, lastMovieIndex]);
 
   return (
-    <section id="cards">
-      <button onClick={handleClickPrev}>Prev</button>
-      <button onClick={handleClickNext}>Next</button>
+    <section id="cards-section">
+      <div className="card-navigation">
+        <button onClick={handleClickPrev}>Prev</button>
+        <button onClick={handleClickNext}>Next</button>
+      </div>
       <div className="cards-container">
         {shownMovies.map(shownMovie => {
           return (
