@@ -5,7 +5,6 @@ import "./Main.css";
 
 function Main() {
   const movies = useDataFetch();
-  console.log("main");
 
   const checkForMovies = () => {
     return !movies || movies.length === 0 ? false : true;
