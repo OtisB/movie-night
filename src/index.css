@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+* {
+  /* Placeholder Colors */
+  --primary-color: #fff;
+  --secundary-color: #28a745;
+  --nav-background-color: #333;
+}
+
 *,
 ::before,
 ::after {
@@ -16,6 +23,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.noMainShown {
+  height: 32vh;
+  margin: 16rem 0;
+  text-align: center;
 }
 
 code {
