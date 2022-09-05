@@ -6,7 +6,6 @@ function MovieOfTheDay({ movies }) {
   return (
     <div key={randomMovie.id} className="MovieOfTheDayWrapper">
       <div className="ImageAndTitle">
-        <h2>{randomMovie.fieldTitle}</h2>
         <img
           className="MovieOfTheDayImage"
           src={randomMovie.fieldImageQuer}
@@ -14,16 +13,19 @@ function MovieOfTheDay({ movies }) {
         />
       </div>
       <div className="SectionWrapper">
-        <p>FSK: {randomMovie.fieldFsk}</p>{" "}
-        <ul className="RatingWrapper">
-          <li className="Rating isRated">&#9734;</li>
-          <li className="Rating isRated">&#9734;</li>
-          <li className="Rating isRated">&#9734;</li>
-          <li className="Rating isRated">&#9734;</li>
-          <li className="Rating isRated">&#9734;</li>
-        </ul>
-        <p>Runtime: {randomMovie.fieldRuntime}</p>
-        <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
+        <h2>{randomMovie.fieldTitle}</h2>
+        <div className="InfoSectionWrapper">
+          <p>FSK: {randomMovie.fieldFsk}</p>{" "}
+          <ul className="RatingWrapper">
+            <li className="Rating isRated">&#9734;</li>
+            <li className="Rating isRated">&#9734;</li>
+            <li className="Rating isRated">&#9734;</li>
+            <li className="Rating isRated">&#9734;</li>
+            <li className="Rating isRated">&#9734;</li>
+          </ul>
+          <p>Runtime: {randomMovie.fieldRuntime}</p>
+          <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
+        </div>
       </div>
     </div>
   );

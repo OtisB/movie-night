@@ -10,16 +10,6 @@ body {
 
 .MovieOfTheDayWrapper {
   display: flex;
-  height: 50vh;
-  width: 50vw;
-  flex-direction: column;
-  border: solid 2px red;
-}
-
-/* 
-.MovieOfTheDayWrapper {
-  border: solid 2px red;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,33 +17,52 @@ body {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-
+  -webkit-box-shadow: 8px 12px 20px 5px rgba(0, 0, 0, 0.59);
+  box-shadow: 8px 12px 20px 5px rgba(0, 0, 0, 0.59);
   margin-bottom: 1rem;
-}
-h2 {
-  font-size: 2rem;
-  border: solid 2px green;
-  color: var(--secundary-color);
-}
-.MovieOfTheDayImage {
-  z-index: 0;
-  width: auto;
-  height: 40vh;
-  object-fit: fit;
-  border: solid 2px blue;
-
-  z-index: 0;
+  background-color: var(--nav-background-color);
   border-radius: 10px;
 }
-
-.InfoSection {
-  display: flex;
+.MovieOfTheDayImage {
+  border-radius: 10px 10px;
+  height: 40vh;
   width: auto;
+}
+
+.ImageAndTitle {
+  display: flex;
+  height: 40vh;
+  width: 50vw;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  object-fit: fit;
+}
+
+h2 {
+  font-size: 2rem;
+  display: flex;
+  color: var(--secundary-color);
+  z-index: 2;
+  justify-content: center;
+  margin: 0;
+}
+
+.SectionWrapper {
+  display: flex;
+  width: 50vw;
   height: 10vh;
-  z-index: 1;
-  border: solid 2px yellow;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--nav-background-color);
+  align-items: center;
+  flex-direction: column;
 
   color: var(--secundary-color);
+}
+.InfoSectionWrapper {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .RatingWrapper {
@@ -63,4 +72,4 @@ h2 {
 
 .Ratinge {
   color: var(--secundary-color);
-} */
+}
