@@ -16,7 +16,7 @@ function Main() {
         <div className="no-data-message">There are no Movies yet!</div>
       )}
       {checkForMovies() && <MovieOfTheDay movies={movies} />}
-
+      {checkForMovies() && <MovieCards movies={movies} />}
     </div>
   );
 }
