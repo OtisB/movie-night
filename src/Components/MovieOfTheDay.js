@@ -1,4 +1,5 @@
 import "./MovieOfTheDay.css";
+import DetailView from './DetailView';
 
 function MovieOfTheDay({ movies }) {
   let randomMovie = movies[Math.floor(Math.random() * movies.length)];
@@ -29,6 +30,7 @@ function MovieOfTheDay({ movies }) {
         </div>
       </div>
     </div>
+    // <DetailView key={randomMovie.id} randomMovie={randomMovie} />
   );
 }
 

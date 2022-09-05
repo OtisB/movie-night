@@ -13,6 +13,9 @@
 ::before,
 ::after {
   box-sizing: inherit;
+  --primary-color: #fff;
+  --secundary-color: #28a745;
+  --nav-background-color: #333;
 }
 
 body {
@@ -21,8 +24,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .noMainShown {
@@ -34,4 +35,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
 }
