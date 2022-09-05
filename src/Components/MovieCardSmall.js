@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "./MovieCardSmall.css";
+import Rating from "./Rating";
 
 function MovieCardSmall({
   id,
@@ -38,7 +39,7 @@ function MovieCardSmall({
             <p>Runtime: {fieldRuntime} min</p>
           </div>
           <div className="rating-container">
-            {fieldRating}</div>
+            <Rating rating={fieldRating} /></div>
         </div>
       </div>
     </Link>

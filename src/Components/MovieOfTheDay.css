@@ -9,11 +9,13 @@
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
+  margin-top: 4rem;  
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .MovieOfTheDayImage {
-  border-radius: 10px 10px 0px 0px;
+  /* border-radius: 10px 10px 0px 0px; */
   height: 40vh;
   width: auto;
 }
@@ -51,10 +53,6 @@ h2 {
 .InfoSectionWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 40vw;
-}
-
-.RatingWrapper {
-  display: flex;
-  list-style: none;
 }

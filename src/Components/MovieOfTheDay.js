@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "./MovieOfTheDay.css";
+import Rating from "./Rating";
 
 function MovieOfTheDay({ movies }) {
   let randomMovie = movies[Math.floor(Math.random() * movies.length)];
@@ -19,13 +20,9 @@ function MovieOfTheDay({ movies }) {
           <h2>{randomMovie.fieldTitle}</h2>
           <div className="InfoSectionWrapper">
             <p>FSK: {randomMovie.fieldFsk}</p>{" "}
-            <ul className="RatingWrapper">
-              <li className="Rating isRated">&#9734;</li>
-              <li className="Rating isRated">&#9734;</li>
-              <li className="Rating isRated">&#9734;</li>
-              <li className="Rating isRated">&#9734;</li>
-              <li className="Rating isRated">&#9734;</li>
-            </ul>
+           
+            <Rating rating={randomMovie.fieldRating} />
+            
             <p>Runtime: {randomMovie.fieldRuntime} min</p>
             <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
           </div>
