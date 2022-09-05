@@ -27,8 +27,6 @@
 .nav-social-container {
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .nav-link-container a:hover {

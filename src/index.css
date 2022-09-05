@@ -7,6 +7,9 @@
   --primary-color: #fff;
   --secundary-color: #28a745;
   --nav-background-color: #333;
+
+  list-style-type: none;
+  text-decoration: none;
 }
 
 *,
@@ -37,7 +40,7 @@ code {
     monospace;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
 }
