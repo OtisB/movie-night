@@ -17,7 +17,7 @@ function DetailView() {
                     <figcaption><h2>{currentMovie.fieldTitle}</h2></figcaption>
                     <img
                         className="detail-view-image"
-                        src={currentMovie.fieldImage}
+                        src={currentMovie.fieldImageQuer}
                         alt={currentMovie.fieldTitle}
                     />
                 </figure>
