@@ -18,7 +18,7 @@ function useDataFetch() {
       const fieldDirectors = fields.directors;
       const fieldCast = fields.cast;
       const fieldScreenwriter = fields.screenwriter;
-      const fieldYearOfPuplication = fields.yearOfPuplication;
+      const fieldYearOfPuplication = fields.yearOfPublication;
       const fieldRating = fields.rating;
       const fieldId = fields.id;
 

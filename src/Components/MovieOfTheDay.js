@@ -2,6 +2,7 @@ import "./MovieOfTheDay.css";
 
 function MovieOfTheDay({ movies }) {
   let randomMovie = movies[Math.floor(Math.random() * movies.length)];
+  console.log(randomMovie);
 
   return (
     <div key={randomMovie.id} className="MovieOfTheDayWrapper">
@@ -23,7 +24,7 @@ function MovieOfTheDay({ movies }) {
             <li className="Rating isRated">&#9734;</li>
             <li className="Rating isRated">&#9734;</li>
           </ul>
-          <p>Runtime: {randomMovie.fieldRuntime}</p>
+          <p>Runtime: {randomMovie.fieldRuntime} min</p>
           <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
         </div>
       </div>
