@@ -3,16 +3,15 @@ import './Rating.css';
 function Rating({rating}){
 
     const ratings = ()=>{
-        const starFull = '«';
-        const starEmpty = '¶';
-        let stars = '';
+        const starFull = <span>&#9733;</span>;
+        const starEmpty = <span>&#9734;</span>;;
+        let stars = [];
         for (let i = 0; i < rating; i++){
-            stars += starFull;       
+            stars.push(starFull);       
         }
 
         for (let i = 0; i < (5-rating); i++) {
-            stars += starEmpty;
-            
+            stars.push(starEmpty);           
         }
         return stars;
     }
