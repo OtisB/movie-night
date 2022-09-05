@@ -1,43 +1,58 @@
-.MovieOfTheDay {
-  display: flex;
-  background-color: var(--nav-background-color);
 
-  border-radius: 10px;
+.MovieOfTheDayWrapper {
+
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
-  max-height: 50vh;
+  height: 50vh;
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
-  color: var(--secundary-color);
-  box-shadow: 10px 5px 25px 5px rgba(0, 0, 0, 0.5);
+
+}
+.MovieOfTheDayImage {
+  border-radius: 10px 10px 0px 0px;
+  height: 40vh;
+  width: auto;
+}
+
+.ImageAndTitle {
+  display: flex;
+  height: 40vh;
+  width: 50vw;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fit;
 }
 
 h2 {
   font-size: 2rem;
-}
-.MovieOfTheDayWrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  color: var(--secundary-color);
+  justify-content: center;
+  margin: 0;
+}
+
+.SectionWrapper {
+  display: flex;
+  width: 50vw;
+  height: 10vh;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--nav-background-color);
   align-items: center;
-  margin-bottom: 1rem;
-  gap: 4rem;
-}
-.MovieOfTheDayImage {
-  width: 300px;
-  height: 300px;
-  z-index: 0;
-
-  object-fit: contain;
-}
-
-.InfoSection {
-  display: flex;
   flex-direction: column;
 
   color: var(--primary-color);
+}
+.InfoSectionWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+.RatingWrapper {
+  display: flex;
+  list-style: none;
 }

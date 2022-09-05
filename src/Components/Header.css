@@ -20,11 +20,11 @@
 }
 
 
-.logo{
+.logo {
   transform: rotate(15deg);
 }
 
-.logo:hover{
+.logo:hover {
   transform: rotate(-5deg);
 }
 
@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.nav-link-container a{
+.nav-link-container a {
   border-bottom: 2px solid var(--nav-background-color);
 }
 
@@ -41,11 +41,10 @@
   border-bottom: 2px solid var(--secundary-color);
 }
 
-.login a{
+.login a {
   border-bottom: 2px solid var(--nav-background-color);
 }
 
-.login a:hover{
+.login a:hover {
   border-bottom: 2px solid var(--secundary-color);
 }
-

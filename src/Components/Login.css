@@ -8,7 +8,7 @@
 }
 
 .LoginButton {
-  padding: 1rem 9.1rem;
+  width: 20vw;
   background-color: var(--secundary-color);
   border-style: none;
   text-transform: uppercase;
@@ -31,17 +31,20 @@
 }
 
 input {
-  padding: 1rem 6rem;
+  width: 20vw;
+  height: 8vh;
   border-style: none;
 }
 
 input:hover {
   background-color: gray;
   color: var(--secundary-color);
+  font-size: 2rem;
 }
 
 input:hover::placeholder {
   color: var(--secundary-color);
+  font-size: 2rem;
 }
 
 .SignUpNow {
