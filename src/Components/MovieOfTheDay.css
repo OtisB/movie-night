@@ -1,48 +1,75 @@
+* {
+  /* Placeholder Colors */
+  --primary-color: #fff;
+  --secundary-color: #28a745;
+  --nav-background-color: #333;
+}
 body {
-  padding-top: 0.2rem;
-}
-
-.MovieOfTheDay {
-  display: flex;
-  background-color: var(--nav-background-color);
-
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-  max-height: 50vh;
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--secundary-color);
-  box-shadow: 10px 5px 25px 5px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 .MovieOfTheDayWrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 50vh;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 8px 12px 20px 5px rgba(0, 0, 0, 0.59);
+  box-shadow: 8px 12px 20px 5px rgba(0, 0, 0, 0.59);
   margin-bottom: 1rem;
-  gap: 4rem;
+  background-color: var(--nav-background-color);
+  border-radius: 10px;
 }
-
 .MovieOfTheDayImage {
-  width: 300px;
-  height: 300px;
-  z-index: 0;
-
-  object-fit: contain;
+  border-radius: 10px 10px;
+  height: 40vh;
+  width: auto;
 }
 
-.InfoSection {
+.ImageAndTitle {
   display: flex;
+  height: 40vh;
+  width: 50vw;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  object-fit: fit;
+}
+
+h2 {
+  font-size: 2rem;
+  display: flex;
+  color: var(--secundary-color);
+  z-index: 2;
+  justify-content: center;
+  margin: 0;
+}
+
+.SectionWrapper {
+  display: flex;
+  width: 50vw;
+  height: 10vh;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--nav-background-color);
+  align-items: center;
   flex-direction: column;
 
-  color: var(--primary-color);
+  color: var(--secundary-color);
+}
+.InfoSectionWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.RatingWrapper {
+  display: flex;
+  list-style: none;
+}
+
+.Ratinge {
+  color: var(--secundary-color);
 }

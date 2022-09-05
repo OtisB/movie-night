@@ -10,6 +10,7 @@ function useDataFetch() {
       const { id } = sys;
       const fieldTitle = fields.title;
       const fieldImage = fields.image.fields.file.url;
+      const fieldImageQuer = fields.imagequer.fields.file.url;
       const fieldDescription = fields.description;
       const fieldRuntime = fields.runtime;
       const fieldFsk = fields.fsk;
@@ -20,10 +21,12 @@ function useDataFetch() {
       const fieldYearOfPuplication = fields.yearOfPuplication;
       const fieldRating = fields.rating;
       const fieldId = fields.id;
+
       const updatedField = {
         id,
         fieldTitle,
         fieldImage,
+        fieldImageQuer,
         fieldDescription,
         fieldRuntime,
         fieldFsk,
@@ -38,6 +41,7 @@ function useDataFetch() {
       return updatedField;
     });
     setMovies(cleanData);
+    console.log(cleanData);
   };
 
   useEffect(() => {
@@ -49,6 +53,7 @@ function useDataFetch() {
     try {
       const response = await client.getEntries();
       const responseData = response.items;
+      console.log(responseData);
       cleanUpData(responseData);
     } catch (error) {
       console.log(error);
