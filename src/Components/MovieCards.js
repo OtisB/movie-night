@@ -27,17 +27,17 @@ function MovieCards({ movies }) {
       setFirstMovieIndex(0);
       setLastMovieIndex(4);
     } else {
-      setFirstMovieIndex(firstMovieIndex - shownRange);
+      setFirstMovieIndex(firstMovieIndex - shownRange - 1);
       setLastMovieIndex(lastMovieIndex - shownRange - 1);
     }
   };
 
   const handleClickNext = () => {
-    if ((lastMovieIndex + shownRange) >= movies.length) {
+    if ((lastMovieIndex + shownRange) >= movies.length - 1) {
       setFirstMovieIndex(((movies.length - 1)) - shownRange);
       setLastMovieIndex(movies.length - 1);
     } else {
-      setFirstMovieIndex(firstMovieIndex + shownRange);
+      setFirstMovieIndex(firstMovieIndex + shownRange + 1);
       setLastMovieIndex(lastMovieIndex + shownRange + 1);
     }
   };
@@ -51,7 +51,7 @@ function MovieCards({ movies }) {
     <section id="cards-section">
       <div className="card-navigation">
         <button disabled={firstMovieIndex === 0} onClick={handleClickPrev}>Prev</button>
-        <button onClick={handleClickNext}>Next</button>
+        <button disabled={lastMovieIndex === movies.length - 1} onClick={handleClickNext}>Next</button>
       </div>
       <div className="cards-container">
         {shownMovies.map(shownMovie => {

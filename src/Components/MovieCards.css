@@ -19,6 +19,11 @@
   margin: 0 2rem;
 }
 
+.card-navigation button:hover {
+  color: var(--primary-color);
+  background-color: var(--secundary-color);
+}
+
 .cards-container {
   display: flex;
   justify-content: space-evenly;
