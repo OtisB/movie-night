@@ -22,6 +22,7 @@
   justify-content: center;
   list-style-type: none;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-social-container {
@@ -33,6 +34,11 @@
   border-bottom: 2px solid var(--secundary-color);
 }
 
+.nav-social-container a>img{
+  transition: transform 0.3s ease-in-out;  
+}
+
 .nav-social-container a>img:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.4, 1.4);
+  transition: transform 0.3s ease-in-out;
 }

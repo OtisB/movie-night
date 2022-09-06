@@ -10,6 +10,7 @@ function DetailView() {
 
     const currentMovie = movies.find(movie => id == movie.id);
 
+    //console.log(currentMovie.fieldDirectors);
     return (
         <>
             {currentMovie && <article key={currentMovie.id} className="detail-view-container">
@@ -22,10 +23,16 @@ function DetailView() {
                     />
                 </figure>
                 <div className="detail-view-info">
-                    <p>Runtime: {currentMovie.fieldFsk}</p>
+                    <p>FSK: {currentMovie.fieldFsk}</p>
                     <p>Rating: <Rating rating={currentMovie.fieldRating} /></p>
-                    <p>Runtime: {currentMovie.fieldRuntime}</p>
+                    <p>Runtime: {currentMovie.fieldRuntime} Minutes</p>
                     <p>Production Year: {currentMovie.fieldYearOfPuplication}</p>
+                    <p>Directors: {currentMovie.fieldDirectors}</p>
+                    <p>Actors: {currentMovie.fieldCast}</p>
+                    <p>Screenwriter: {currentMovie.fieldScreenwriter}</p>
+                    <div className="description">
+                        {currentMovie.fieldDescription}
+                    </div>
                 </div>
             </article>}
         </>
