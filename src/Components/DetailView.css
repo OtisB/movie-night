@@ -1,6 +1,6 @@
-.detail-view-container{
+.detail-view-container {
     display: flex;
-    margin: 1rem auto 7rem auto;
+    margin: 4rem auto 4rem auto;
     width: 95vw;
     background-color: var(--nav-background-color);
     color: var(--primary-color);
@@ -9,24 +9,24 @@
     border-radius: 10px;
 }
 
-.detail-view-container figcaption>h2{
+.detail-view-container figcaption>h2 {
     color: var(--secundary-color);
     font-size: 1.5em;
 }
 
-.detail-view-image{
+.detail-view-image {
     width: 60vw;
     height: calc(60vw / 1.618);
     object-fit: cover;
     object-position: left top;
 }
 
-.detail-view-info{
+.detail-view-info {
     margin-right: 3rem;
 }
 
-.description{
-    
+.description {
+
     height: 500px;
     text-align: justify;
     overflow-y: scroll;
@@ -37,20 +37,18 @@
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
-    }
-    
-    ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     border: 1px solid var(--secundary-color);
     border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    background: var(--secundary-color);  
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secundary-color);
     border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-    background: var(--secundary-color);  
-    }
+}
 
-
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secundary-color);
+}

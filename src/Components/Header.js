@@ -10,16 +10,20 @@ function Header() {
           <Link to='/'><img src={Logo} alt="Movie Night" width="50" /></Link>
         </div>
         <ul className="nav-link-container">
-          <NavLink to="/action">
+          {/* <NavLink to="/action"> */}
+          <NavLink to="/error">
             <li>Action</li>
           </NavLink>
-          <NavLink to="/science-fiction">
+          {/* <NavLink to="/science-fiction"> */}
+          <NavLink to="/error">
             <li>Scifi</li>
           </NavLink>
-          <NavLink to="/drama">
+          {/* <NavLink to="/drama"> */}
+          <NavLink to="/error">
             <li>Drama</li>
           </NavLink>
-          <NavLink to="/horror">
+          {/* <NavLink to="/horror"> */}
+          <NavLink to="/error">
             <li>Horror</li>
           </NavLink>
         </ul>

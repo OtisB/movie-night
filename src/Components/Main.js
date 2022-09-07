@@ -13,7 +13,7 @@ function Main() {
   return (
     <div className="main-container">
       {!checkForMovies() && (
-        <div className="no-data-message">There are no Movies yet!</div>
+        <div className="no-data-message"><h2>There are no Movies yet!</h2></div>
       )}
       {checkForMovies() && <MovieOfTheDay movies={movies} />}
       {checkForMovies() && <MovieCards movies={movies} />}
