@@ -24,6 +24,18 @@
   background-color: var(--secundary-color);
 }
 
+.card-navigation button:active {
+  box-shadow:
+    7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+}
+
+.card-navigation button:disabled {
+  color: var(--nav-background-color);
+  background-color: transparent;
+  border: 2px solid var(--nav-background-color);
+}
+
 .cards-container {
   display: flex;
   justify-content: space-evenly;
