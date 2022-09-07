@@ -1,4 +1,5 @@
-.LoginWrapper {
+.SignUpWrapepr {
+  background-color: var(--nav-background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,27 +7,15 @@
   height: 80vh;
 }
 
-.LoginButton {
+.SignUpButton {
   width: 20vw;
   background-color: var(--secundary-color);
   border-style: none;
   text-transform: uppercase;
 }
 
-.LoginButton:hover {
+.SignUpButton:hover {
   cursor: pointer;
-}
-
-.SignUpWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-color);
-}
-
-.NotAMember {
-  color: gray;
-  margin-right: 0.3rem;
 }
 
 input {
@@ -40,7 +29,6 @@ input:hover {
   color: var(--secundary-color);
   font-size: 2rem;
 }
-
 input:hover::placeholder {
   color: var(--secundary-color);
   font-size: 2rem;
