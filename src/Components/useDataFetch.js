@@ -41,7 +41,6 @@ function useDataFetch() {
       return updatedField;
     });
     setMovies(cleanData);
-    console.log(cleanData);
   };
 
   useEffect(() => {
@@ -53,7 +52,6 @@ function useDataFetch() {
     try {
       const response = await client.getEntries();
       const responseData = response.items;
-      console.log(responseData);
       cleanUpData(responseData);
     } catch (error) {
       console.log(error);

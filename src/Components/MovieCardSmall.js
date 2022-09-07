@@ -19,7 +19,6 @@ function MovieCardSmall({
     mainTitle = titleParts[0];
     additionalTitle = titleParts[1];
   }
-  console.log('card ', id);
   return (
     <Link to={`/${id}`}>
       <div className="movie-card" key={id}>

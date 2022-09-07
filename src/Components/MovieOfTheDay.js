@@ -4,7 +4,6 @@ import Rating from "./Rating";
 
 function MovieOfTheDay({ movies }) {
   let randomMovie = movies[Math.floor(Math.random() * movies.length)];
-  console.log(randomMovie);
 
   return (
     <Link to={`/${randomMovie.id}`}>
@@ -20,9 +19,9 @@ function MovieOfTheDay({ movies }) {
           <h2>{randomMovie.fieldTitle}</h2>
           <div className="InfoSectionWrapper">
             <p>FSK: {randomMovie.fieldFsk}</p>{" "}
-           
+
             <Rating rating={randomMovie.fieldRating} />
-            
+
             <p>Runtime: {randomMovie.fieldRuntime} min</p>
             <p>Production Year: {randomMovie.fieldYearOfPuplication}</p>
           </div>
