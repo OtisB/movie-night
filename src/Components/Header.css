@@ -9,6 +9,7 @@
   width: 100%;
   height: 4rem;
   padding: 0 2rem;
+  border-bottom: 3px solid var(--secundary-color);
 }
 
 .navbar a {
