@@ -1,9 +1,8 @@
 import "./Login.css";
 import { Link } from "react-router-dom";
-
 import React from "react";
 
-function Login() {
+function Login({ handleclick }) {
   return (
     <div className="LoginWrapper">
       <form action="#">
@@ -16,21 +15,23 @@ function Login() {
           />
         </label>
         <br />
-        <label htmlFor="Passowrt">
+        <label htmlFor="Password">
           <input
-            placeholder="passwort"
+            placeholder="password"
             type="password"
             name="Passwort"
             id="Passwort"
           />
         </label>
         <br />
-        <input type="button" value="Login" className="LoginButton" />
+        <Link to={"./main"}>
+          <input type="button" value="Login" className="LoginButton" />
+        </Link>
         <div className="SignUpWrapper">
           <p className="NotAMember">not a member ?</p>
-          <Link className="SignUpNow" to="/">
+          <button onClick={() => handleclick(false)} className="SignUpNow">
             Sign up now
-          </Link>
+          </button>
         </div>
       </form>
     </div>
