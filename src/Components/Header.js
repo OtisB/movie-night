@@ -1,6 +1,6 @@
-import { NavLink, Link } from 'react-router-dom';
-import './Header.css';
-import Logo from '../img/Logo.png';
+import { NavLink, Link } from "react-router-dom";
+import "./Header.css";
+import Logo from "../img/Logo.png";
 
 function Header() {
   return (
@@ -24,7 +24,7 @@ function Header() {
           </NavLink>
         </ul>
         <div className="login">
-          <NavLink to="Login">Login</NavLink>
+          <NavLink to="/">Log out</NavLink>
         </div>
       </nav>
     </div>
