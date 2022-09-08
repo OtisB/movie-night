@@ -8,7 +8,7 @@ function Header() {
       <nav className="navbar">
         <div className="logo">
           {/* Placeholder Logo, replace with image */}
-          <Link to="/">
+          <Link to="main">
             <img src={Logo} alt="Movie Night" width="50" />
           </Link>
         </div>

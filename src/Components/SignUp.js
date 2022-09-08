@@ -7,6 +7,7 @@ function SignUp({ handleclick }) {
       <form action="#">
         <label htmlFor="first_Name">
           <input
+            className="Input setBorderTop"
             placeholder="Firstname"
             type="text"
             name="first_name"
@@ -16,6 +17,7 @@ function SignUp({ handleclick }) {
         <br />
         <label htmlFor="last_name">
           <input
+            className="Input"
             placeholder="Lastname"
             type="text"
             name="last_name"
@@ -24,11 +26,18 @@ function SignUp({ handleclick }) {
         </label>
         <br />
         <label htmlFor="email">
-          <input placeholder="eMail" type="email" name="email" id="email" />
+          <input
+            className="Input"
+            placeholder="eMail"
+            type="email"
+            name="email"
+            id="email"
+          />
         </label>
         <br />
         <label htmlFor="password">
           <input
+            className="Input"
             placeholder="password min 8 char"
             type="password"
             name="password"
@@ -36,9 +45,16 @@ function SignUp({ handleclick }) {
           />
         </label>
         <br />
-        <input type="button" value="SignUp" className="SignUpButton" />
+        <input
+          type="button"
+          value="SignUp"
+          className="SignUpButton setBorderBottom"
+        />
+        <br />
+        <button className="BackToLogin" onClick={() => handleclick(true)}>
+          back to Login
+        </button>
       </form>
-      <button onClick={() => handleclick(true)}>back to Login</button>
     </div>
   );
 }

@@ -11,6 +11,7 @@
   background-color: var(--secundary-color);
   border-style: none;
   text-transform: uppercase;
+  border-radius: 0 0 10px 10px;
 }
 
 .LoginButton:hover {
@@ -34,18 +35,27 @@ input {
   height: 8vh;
   border-style: none;
 }
+.InputTop {
+  border-radius: 10px 10px 0 0;
+}
 
 input:hover {
   background-color: gray;
   color: var(--secundary-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 input:hover::placeholder {
   color: var(--secundary-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .SignUpNow {
   color: var(--secundary-color);
+  border-style: none;
+  background: transparent;
+}
+
+.SignUpNow:hover {
+  cursor: pointer;
 }

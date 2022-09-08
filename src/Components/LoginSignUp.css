@@ -1,22 +1,7 @@
 .LoginSingUpWrapper {
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c6462,
-    #20433d,
-    #0e2c21
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c6462,
-    #20433d,
-    #0e2c21
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: saturation;
-  background-position: center; */
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c6462, #20433d, #0e2c21);
+  background: linear-gradient(to right, #2c6462, #20433d, #0e2c21);
   height: 85vh;
 }
 
