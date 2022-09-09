@@ -7,22 +7,25 @@ function Header() {
     <div>
       <nav className="navbar">
         <div className="logo">
-          {/* Placeholder Logo, replace with image */}
-          <Link to="main">
-            <img src={Logo} alt="Movie Night" width="50" />
-          </Link>
+
+          <Link to='/'><img src={Logo} alt="Movie Night" width="50" /></Link>
+
         </div>
         <ul className="nav-link-container">
-          <NavLink to="/action">
+          {/* <NavLink to="/action"> */}
+          <NavLink to="/genre/action">
             <li>Action</li>
           </NavLink>
-          <NavLink to="/science-fiction">
+          {/* <NavLink to="/science-fiction"> */}
+          <NavLink to="/genre/scifi">
             <li>Scifi</li>
           </NavLink>
-          <NavLink to="/drama">
+          {/* <NavLink to="/drama"> */}
+          <NavLink to="/genre/drama">
             <li>Drama</li>
           </NavLink>
-          <NavLink to="/horror">
+          {/* <NavLink to="/horror"> */}
+          <NavLink to="/genre/horror">
             <li>Horror</li>
           </NavLink>
         </ul>

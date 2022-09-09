@@ -9,6 +9,7 @@
   width: 100%;
   height: 4rem;
   padding: 0 2rem;
+  border-bottom: 3px solid var(--secundary-color);
 }
 
 .navbar a {
@@ -19,10 +20,11 @@
 
 .logo {
   transform: rotate(15deg);
+  transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
-  transform: rotate(-5deg);
+  transform: rotate(-15deg);
 }
 
 .nav-link-container {

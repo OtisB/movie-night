@@ -11,19 +11,23 @@ function Footer() {
     <nav className="footer-navbar">
       <ul className="nav-link-container">
         <li>
-          <Link to="/inprint">Imprint</Link>
+          {/* <Link to="/inprint">Imprint</Link> */}
+          <Link to="/error">Imprint</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          {/* <Link to="/contact">Contact</Link> */}
+          <Link to="/error">Contact</Link>
         </li>
         <li>
-          <Link to="/aboutus">About us</Link>
+          {/* <Link to="/aboutus">About</Link> */}
+          <Link to="/error">About</Link>
         </li>
         <li>
-          <Link to="/help">Help</Link>
+          {/* <Link to="/help">Help</Link> */}
+          <Link to="/error">Help</Link>
         </li>
-        </ul>
-        <ul className="nav-social-container">
+      </ul>
+      <ul className="nav-social-container">
         <li>
           <a href={"https://m.facebook.com/"} target="_blank" rel="noreferrer noopener">
             <img src={Facebook} alt="www.flaticon.com" width="30" />
