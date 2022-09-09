@@ -12,21 +12,29 @@ function Header() {
 
         </div>
         <ul className="nav-link-container">
-          {/* <NavLink to="/action"> */}
           <NavLink to="/genre/action">
             <li>Action</li>
           </NavLink>
-          {/* <NavLink to="/science-fiction"> */}
-          <NavLink to="/genre/scifi">
-            <li>Scifi</li>
-          </NavLink>
-          {/* <NavLink to="/drama"> */}
           <NavLink to="/genre/drama">
             <li>Drama</li>
           </NavLink>
-          {/* <NavLink to="/horror"> */}
+          <NavLink to="/genre/comedy">
+            <li>Comedy</li>
+          </NavLink>
           <NavLink to="/genre/horror">
             <li>Horror</li>
+          </NavLink>
+          <NavLink to="/genre/fantasie">
+            <li>Fantasy</li>
+          </NavLink>
+          <NavLink to="/genre/thriller">
+            <li>Thriller</li>
+          </NavLink>
+          <NavLink to="/genre/scifi">
+            <li>Scifi</li>
+          </NavLink>
+          <NavLink to="/genre/trash">
+            <li>Trash</li>
           </NavLink>
         </ul>
         <div className="login">
