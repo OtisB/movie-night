@@ -1,6 +1,7 @@
 .genre-container{
-    margin: 15rem auto 5rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem
+    height: 87vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
