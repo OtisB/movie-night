@@ -3,6 +3,7 @@
     margin: 4rem auto 4rem auto;
     width: 95vw;
     background-color: var(--nav-background-color);
+    box-shadow: 8px 12px 20px 5px rgba(0, 0, 0, 0.59);
     color: var(--primary-color);
     align-items: center;
     justify-content: space-around;
@@ -22,7 +23,7 @@
 }
 
 .detail-view-info {
-    margin-right: 3rem;
+    margin: 1rem;
 }
 
 .description {
@@ -45,10 +46,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secundary-color);
+    background-color: var(--secundary-color);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secundary-color);
+    background-color: var(--secundary-color);
 }
