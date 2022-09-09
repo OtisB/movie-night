@@ -51,3 +51,23 @@
 .setBorderBottom {
   border-radius: 0 0 10px 10px;
 }
+.SignInWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+.alreadyAMember {
+  color: gray;
+  margin-right: 0.3rem;
+}
+
+.SignInNow {
+  color: var(--secundary-color);
+  border-style: none;
+  background: transparent;
+}
+
+.SignInNow:hover {
+  cursor: pointer;
+}

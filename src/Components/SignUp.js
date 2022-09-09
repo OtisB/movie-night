@@ -51,9 +51,12 @@ function SignUp({ handleclick }) {
           className="SignUpButton setBorderBottom"
         />
         <br />
-        <button className="BackToLogin" onClick={() => handleclick(true)}>
-          back to Login
-        </button>
+        <div className="SignInWrapper">
+          <p className="alreadyAMember">already a member ?</p>
+          <button className="SignInNow" onClick={() => handleclick(true)}>
+            back to Login
+          </button>
+        </div>
       </form>
     </div>
   );
