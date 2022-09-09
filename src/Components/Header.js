@@ -11,19 +11,19 @@ function Header() {
         </div>
         <ul className="nav-link-container">
           {/* <NavLink to="/action"> */}
-          <NavLink to="/error">
+          <NavLink to="/genre/action">
             <li>Action</li>
           </NavLink>
           {/* <NavLink to="/science-fiction"> */}
-          <NavLink to="/error">
+          <NavLink to="/genre/scifi">
             <li>Scifi</li>
           </NavLink>
           {/* <NavLink to="/drama"> */}
-          <NavLink to="/error">
+          <NavLink to="/genre/drama">
             <li>Drama</li>
           </NavLink>
           {/* <NavLink to="/horror"> */}
-          <NavLink to="/error">
+          <NavLink to="/genre/horror">
             <li>Horror</li>
           </NavLink>
         </ul>
