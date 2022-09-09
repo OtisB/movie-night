@@ -12,7 +12,7 @@ function LoginSignUp() {
 
   return (
     <div className="LoginSingUpWrapper">
-      <h1 className="Greeting">Welcome to MovieNight beloved user!</h1>
+      {/* <h1 className="Greeting">Welcome to MovieNight beloved user!</h1> */}
       {active && <Login handleclick={handleclick} />}
       {!active && <SignUp handleclick={handleclick} />}
     </div>

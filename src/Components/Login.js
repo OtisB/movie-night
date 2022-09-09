@@ -5,9 +5,10 @@ import React from "react";
 function Login({ handleclick }) {
   return (
     <div className="LoginWrapper">
-      <form action="#">
+      <form className="FormWrapper" action="#">
         <label htmlFor="Username">
           <input
+            className="InputTop"
             placeholder="username"
             type="text"
             name="Username"
@@ -17,6 +18,7 @@ function Login({ handleclick }) {
         <br />
         <label htmlFor="Password">
           <input
+            className="InputBottom"
             placeholder="password"
             type="password"
             name="Passwort"

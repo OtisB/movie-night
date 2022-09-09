@@ -7,7 +7,9 @@ function Header() {
     <div>
       <nav className="navbar">
         <div className="logo">
+
           <Link to='/'><img src={Logo} alt="Movie Night" width="50" /></Link>
+
         </div>
         <ul className="nav-link-container">
           {/* <NavLink to="/action"> */}
