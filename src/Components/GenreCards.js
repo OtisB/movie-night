@@ -19,7 +19,7 @@ export default function GenreCards(){
     <div>
         <Header />
         <div className="genre-container">
-        {checkForMovies(id) && genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id}/>)}
+        {checkForMovies(id)&&genreMovies.length? genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id}/>):<h2>Nothing to Show, so far!</h2>}
         </div>
     </div>
   )
