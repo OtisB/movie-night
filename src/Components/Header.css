@@ -44,6 +44,10 @@
   border-bottom: 2px solid var(--nav-background-color);
 }
 
+a.active {
+  border-bottom: 2px solid var(--secundary-color);
+}
+
 .login a:hover {
   border-bottom: 2px solid var(--secundary-color);
 }
