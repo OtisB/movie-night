@@ -39,5 +39,5 @@
 .cards-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem;
+  margin: 0 2rem;
 }
