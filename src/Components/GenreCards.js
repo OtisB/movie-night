@@ -6,12 +6,14 @@ import useDataFetch from "./useDataFetch";
 import { useParams } from "react-router-dom";
 
 export default function GenreCards() {
-  const { id } = useParams();
+  const { genre } = useParams();
   const movies = useDataFetch();
   let genreMovies = [];
 
-  const checkForMovies = (g) => {
-    genreMovies = movies.filter(movie => movie.fieldGenre.toLowerCase() === g);
+  const checkForMovies = () => {
+    if (genre === 'all') genreMovies = movies;
+    else genreMovies = movies.filter(movie => movie.fieldGenre.toLowerCase() === genre);
+
     return genreMovies;
   };
 
@@ -20,7 +22,7 @@ export default function GenreCards() {
       <Header />
       <section className="genre-section">
         <div className="genre-cards-row">
-          {checkForMovies(id) && genreMovies.length ? genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id} />) : <h2>Nothing to Show, so far!</h2>}
+          {checkForMovies() && genreMovies.length ? genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id} />) : <h2>Nothing to Show, so far!</h2>}
         </div>
       </section>
     </>
