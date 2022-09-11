@@ -12,6 +12,9 @@ function Header() {
 
         </div>
         <ul className="nav-link-container">
+          <NavLink to="/genre/all">
+            <li>All</li>
+          </NavLink>
           <NavLink to="/genre/action">
             <li>Action</li>
           </NavLink>
