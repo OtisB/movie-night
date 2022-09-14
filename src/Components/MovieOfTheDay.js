@@ -7,7 +7,7 @@ function MovieOfTheDay({ movies }) {
 
   return (
     <section className='movie-of-the-day-section'>
-      <Link to={`/${randomMovie.id}`}>
+      <Link to={`/detail/${randomMovie.id}`}>
         <div key={randomMovie.id} className="MovieOfTheDayWrapper">
           <div className="MovieOfTheDayImageContainer">
             <img

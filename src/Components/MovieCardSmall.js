@@ -20,7 +20,7 @@ function MovieCardSmall({
     additionalTitle = titleParts[1];
   }
   return (
-    <Link to={`/${id}`}>
+    <Link to={`/detail/${id}`}>
       <div className="movie-card" key={id}>
         <div className="card-image-container">
           <img
