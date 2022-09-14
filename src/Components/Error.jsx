@@ -1,9 +1,9 @@
 import './Error.css';
 
-function Error() {
+function Error({ text }) {
   return (
     <div className='error-msg'>
-      <h2>Somthing went wrong!</h2>
+      <h2>{text}</h2>
     </div>
   )
 }

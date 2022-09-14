@@ -1,7 +1,6 @@
 import "./GenreCards.css";
 import MovieCardSmall from "./MovieCardSmall";
-import Header from "./Header";
-import Footer from "./Footer";
+import Error from "./Error";
 import useDataFetch from "./useDataFetch";
 import { useParams } from "react-router-dom";
 
@@ -19,10 +18,9 @@ export default function GenreCards() {
 
   return (
     <>
-      <Header />
       <section className="genre-section">
         <div className="genre-cards-row">
-          {checkForMovies() && genreMovies.length ? genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id} />) : <h2>Nothing to Show, so far!</h2>}
+          {checkForMovies() && genreMovies.length ? genreMovies.map(movie => <MovieCardSmall {...movie} key={movie.id} />) : <Error text='Nothing to show yet' />}
         </div>
       </section>
     </>

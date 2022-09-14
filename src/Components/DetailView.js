@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useDataFetch from "./useDataFetch";
 import './DetailView.css';
 import Rating from './Rating';
+import Error from "./Error";
 
 function DetailView() {
 
@@ -10,11 +11,11 @@ function DetailView() {
 
     const currentMovie = movies.find(movie => id == movie.id);
 
-    const listOf = (arr)=>{
+    const listOf = (arr) => {
         let i = 0;
         const arrLength = arr.length;
-        arr =  arr.map(item => {
-            if(i < arrLength){
+        arr = arr.map(item => {
+            if (i < arrLength) {
                 item += ', ';
             }
             i++;
@@ -26,7 +27,7 @@ function DetailView() {
 
     return (
         <>
-            {currentMovie && <article key={currentMovie.id} className="detail-view-container">
+            {currentMovie !== undefined ? <article key={currentMovie.id} className="detail-view-container">
                 <figure>
                     <img
                         className="detail-view-image"
@@ -47,7 +48,7 @@ function DetailView() {
                         {currentMovie.fieldDescription}
                     </div>
                 </div>
-            </article>}
+            </article> : <Error text='Something went wrong!' />}
         </>
     );
 }

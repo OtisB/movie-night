@@ -17,8 +17,8 @@ function App() {
         <Route path="detail/:id" element={<DetailView />} />
         <Route path="genre/:genre" element={<GenreCards />} />
         <Route path="Login" element={<LoginSignUp />} />
-        <Route path="error" element={<Error />} />
-        <Route path="*" element={<Error />} />
+        <Route path="error" element={<Error text='Something went wrong!' />} />
+        <Route path="*" element={<Error text='Something went wrong!' />} />
       </Routes>
       <Footer />
     </div>
