@@ -7,9 +7,9 @@ function MovieCards({ movies }) {
   const [lastMovieIndex, setLastMovieIndex] = useState(1);
   const [shownRange, setShownRange] = useState(lastMovieIndex - firstMovieIndex);
   const [shownMovies, setShownMovies] = useState(movies.slice(firstMovieIndex, lastMovieIndex + 1));
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  //const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  //const shownRange = lastMovieIndex - firstMovieIndex;
+  const screenWidth = window.innerWidth;
 
   const checkScreenWidth = () => {
     if (screenWidth >= 1400) {
@@ -45,7 +45,7 @@ function MovieCards({ movies }) {
   useEffect(() => {
     checkScreenWidth();
     setShownMovies(movies.slice(firstMovieIndex, lastMovieIndex + 1));
-  }, [firstMovieIndex, lastMovieIndex, screenWidth]);
+  }, [firstMovieIndex, lastMovieIndex]);
 
   return (
     <section id="cards-section">
