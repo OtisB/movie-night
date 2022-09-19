@@ -3,15 +3,13 @@ import './Rating.css';
 function Rating({ rating }) {
 
     const ratings = () => {
-        const starFull = <span className='star-full'>&#9733;</span>;
-        const starEmpty = <span>&#9734;</span>;;
         let stars = [];
         for (let i = 0; i < rating; i++) {
-            stars.push(starFull);
+            stars.push(<span className='star-full' key={crypto.randomUUID()}>&#9733;</span>);
         }
 
         for (let i = 0; i < (5 - rating); i++) {
-            stars.push(starEmpty);
+            stars.push(<span key={crypto.randomUUID()}>&#9734;</span>);
         }
         return stars;
     }
