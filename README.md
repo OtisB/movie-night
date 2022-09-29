@@ -1,3 +1,4 @@
+(Just click on LogIn, no signup needed)
 https://your-movie-night.netlify.app/
 
 
